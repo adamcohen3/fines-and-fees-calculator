@@ -20,16 +20,21 @@ The calculator relies on six sources of data:
 ## How it works
 
 Following a Welcome and FAQ screen, the calculator proceeds in four steps.
+
+### Step 1: Charges
 1. The user indicates their role, the date of the offenses, and the name of the offenses.
 ![step 1](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step1.JPG) 
 
+### Step 2: Ability to Pay Form
 2. The user selects whether they want to reduce their fines, convert them to community service, or skip ahead. If requesting a reduction or conversion, the user completes an "ability to pay" form that can be provided to the court to determine if the person is eligible.
 ![step 2](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step2.JPG) 
 
+### Step 3: Fines and Fees
 3. The user indicates what they are able to pay.
 ![step 3](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step3.JPG) 
 
-4. The user reviews and prints out a summary of what they can pay, and follows the instructions describing how to use the information they have provided to request a fine reduction or community service conversion from the court.
+### Step 4: Summary
+4. The user reviews and prints out a summary of what they can pay, and follows the instructions describing how to use the information provided to make a request to the court for a fine reduction or community service conversion.
 ![step 4](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step4.JPG) 
 
 ## Deployment note
