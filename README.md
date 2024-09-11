@@ -1,8 +1,9 @@
-# The Hawaii State Judiciary Fines and Fees Calculator ![hex thumbnail](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/hex_thumbnail_207x240.png) 
+# The Hawaii State Judiciary Fines and Fees Calculator
+
+![hex thumbnail](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/hex_thumbnail_207x240.png) 
 
 [https://adamc3.shinyapps.io/lfo_calculator/](https://adamc3.shinyapps.io/lfo_calculator/)    
 <br>
-  
 This calculator is part of an [Access to Justice initiative](https://www.courts.state.hi.us/services/access_to_justice_initiative_main_page) at the Hawai'i State Judiciary. The fines and fees calculator is designed to help people calculate the fines and fees owed on a specific ticket, and if eligible, request either a reduction in their fines or a conversion to community service. This calculator can be used by defendants, attorneys, the court, and the general public.
 
  ## Data
@@ -18,4 +19,4 @@ The calculator relies on six sources of data:
 
 ## Deployment note
 
-If you attempt to run a copy of the shinyapp locally or remotely, you will need disable blocks of code that enable persistant storage on Dropbox. Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
+If you attempt to run a copy of the shinyapp locally or remotely, you will need disable blocks of code that enable persistent storage on Dropbox. Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
