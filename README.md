@@ -17,13 +17,13 @@ The calculator relies on six sources of data:
 2. [2024 Federal poverty guidelines **for Hawaii**](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
 3. [2020 ALICE survival budget](https://www.unitedforalice.org/household-budgets/hawaii)
 
-Most of the static fines and fees that populate the calculator are imported from the rds file in the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, and these fines often have a minimum and maximum penalty, with the court ordering a fine within that range. The logic of the traffic code for these set of fines is reflected in the R code.
+Most of the static fines and fees that populate the calculator are imported from the rds file that is stored in top level of the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, and these fines often have a minimum and maximum penalty, with the court ordering a fine within that range. The logic of the traffic code for these set of fines is reflected in the R code.
 
-Most fines can be reduced or coverted to community service by the court. Most fees cannot.
+As of 2024, the calculator primarily focuses on traffic offenses. Most fines can be reduced or converted to community service by the court. Most fees cannot.
 
 ## How it works
 
-Following a Welcome and FAQ screen, the calculator proceeds in four steps.
+Following a "Welcome and FAQ" screen, the calculator proceeds in four steps.
 
 ### Step 1: Charges
 1. The user indicates their role, the date of the offenses, and the name of the offenses.
