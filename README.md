@@ -47,5 +47,5 @@ If you attempt to run a copy of the shinyapp locally or remotely, you will need 
 
 ## Attribution/Mahalo
 
-Mahalo to Flaticon for making available the image in the hex sticker:
+Mahalo to Flaticon for making available the image in the hex sticker:  
 <a href="https://www.flaticon.com/free-icons/speeding-ticket" title="speeding ticket icons">Speeding ticket icons created by surang - Flaticon</a>
