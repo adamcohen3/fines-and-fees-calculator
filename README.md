@@ -4,7 +4,7 @@
 
 [https://adamc3.shinyapps.io/lfo_calculator/](https://adamc3.shinyapps.io/lfo_calculator/)    
 <br>
-This calculator is part of an [Access to Justice initiative](https://www.courts.state.hi.us/services/access_to_justice_initiative_main_page) at the Hawai'i State Judiciary. The fines and fees calculator is designed to help people calculate the fines and fees owed on a specific ticket, and if eligible, request either a reduction in their fines or a conversion to community service. This calculator can be used by defendants, attorneys, the court, and the general public.
+The fines and fees calculator is part of an [Access to Justice initiative](https://www.courts.state.hi.us/services/access_to_justice_initiative_main_page) at the Hawai'i State Judiciary. The calculator is designed to help people calculate the fines and fees owed on a ticket, and if eligible, request either a reduction in their fines or a conversion to community service. This calculator can be used by defendants, attorneys, the court, and the general public.
 
  ## Data
 
@@ -16,6 +16,10 @@ The calculator relies on six sources of data:
       c. Local Ordinances => Local laws passed by the City Councils (e.g., [ROH](https://www8.honolulu.gov/ocs/revised-ordinances-of-honolulu/))  
 2. [2024 Federal poverty guidelines **for Hawaii**](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
 3. [2020 ALICE survival budget](https://www.unitedforalice.org/household-budgets/hawaii)
+
+Most of the static fines and fees that populate the calculator are imported from the rds file in the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, and these fines often have a minimum and maximum penalty, with the court ordering a fine within that range. The logic of the traffic code for these set of fines is reflected in the R code.
+
+Most fines can be reduced or coverted to community service by the court. Most fees cannot.
 
 ## How it works
 
@@ -39,4 +43,4 @@ Following a Welcome and FAQ screen, the calculator proceeds in four steps.
 
 ## Deployment note
 
-If you attempt to run a copy of the shinyapp locally or remotely, you will need disable blocks of code that enable persistent storage on Dropbox. Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
+If you attempt to run a copy of the shinyapp locally or remotely, you will need disable code that enable persistent storage on Dropbox (using ctrl-f and "dropbox persistent storage" should locate the relevant sections). Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
