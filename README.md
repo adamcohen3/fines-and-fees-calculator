@@ -1,6 +1,6 @@
 # The Hawaii State Judiciary Fines and Fees Calculator
 
-![hex thumbnail](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/hex_thumbnail_207x240.png) 
+![hex thumbnail](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/hex_thumbnail_202x240.png) 
 
 [https://adamc3.shinyapps.io/lfo_calculator/](https://adamc3.shinyapps.io/lfo_calculator/)    
 <br>
@@ -27,20 +27,25 @@ Following a Welcome and FAQ screen, the calculator proceeds in four steps.
 
 ### Step 1: Charges
 1. The user indicates their role, the date of the offenses, and the name of the offenses.
-![step 1](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step1.JPG) 
+![step 1](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step1_crop2.JPG) 
 
 ### Step 2: Ability to Pay Form
 2. The user selects whether they want to reduce their fines, convert them to community service, or skip ahead. If requesting a reduction or conversion, the user completes an "ability to pay" form that can be provided to the court to determine if the person is eligible.
-![step 2](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step2.JPG) 
+![step 2](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step2_crop2.JPG) 
 
 ### Step 3: Fines and Fees
 3. The user indicates what they are able to pay.
-![step 3](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step3.JPG) 
+![step 3](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step3_crop2.JPG) 
 
 ### Step 4: Summary
 4. The user reviews and prints out a summary of what they can pay, and follows the instructions describing how to use the information provided to make a request to the court for a fine reduction or community service conversion.
-![step 4](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step4.JPG) 
+![step 4](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/calculator_step4_crop2.JPG) 
 
 ## Deployment note
 
 If you attempt to run a copy of the shinyapp locally or remotely, you will need disable code that enable persistent storage on Dropbox (using ctrl-f and "dropbox persistent storage" should locate the relevant sections). Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
+
+## Attribution/Mahalo
+
+Mahalo to Flaticon for making available the image in the hex sticker:
+<a href="https://www.flaticon.com/free-icons/speeding-ticket" title="speeding ticket icons">Speeding ticket icons created by surang - Flaticon</a>
