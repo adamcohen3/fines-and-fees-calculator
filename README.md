@@ -8,16 +8,16 @@ The fines and fees calculator is part of an [Access to Justice initiative](https
 
  ## Data
 
-The calculator relies on six sources of data: 
+The calculator relies on three sources of data for offenses and their monetary penalties:  
+1. **Hawaii Revised Statutes**: State laws passed by the Legislative branch ([HRS](https://www.capitol.hawaii.gov/hrsall/))
+2. **Hawaii Administrative Rules**: Rules established by the Executive branch ([HAR](https://ltgov.hawaii.gov/the-office/administrative-rules/))
+3. **Local Ordinances**: Local laws passed by the City Councils (e.g., [ROH](https://www8.honolulu.gov/ocs/revised-ordinances-of-honolulu/))  
 
-1. Offenses and their monetary penalties:  
-      a. Hawaii Revised Statutes => State laws passed by the Legislative branch ([HRS](https://www.capitol.hawaii.gov/hrsall/))  
-      b. Hawaii Administrative Rules => Rules established by the Executive branch ([HAR](https://ltgov.hawaii.gov/the-office/administrative-rules/))  
-      c. Local Ordinances => Local laws passed by the City Councils (e.g., [ROH](https://www8.honolulu.gov/ocs/revised-ordinances-of-honolulu/))  
-2. [2024 Federal poverty guidelines **for Hawaii**](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
-3. [2020 ALICE survival budget](https://www.unitedforalice.org/household-budgets/hawaii)
+It also relies on two sources for cost of living, which can serve as a reference point in determining a defendant's ability to pay:
+1. [2024 Federal poverty guidelines *for Hawaii*](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
+2. [2020 ALICE survival budget *for Hawaii*](https://www.unitedforalice.org/household-budgets/hawaii)
 
-Most of the static fines and fees that populate the calculator are imported from the rds file that is stored in top level of the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, and these fines often have a minimum and maximum penalty, with the court ordering a fine within that range. The logic of the traffic code for these set of fines is reflected in the R code.
+Most of the static fines and fees that populate the calculator are stored in the rds file at top level of the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, or the court sets the fine between a minimum and maximum penalty determined by statute. These fines require user input, and their underlying logic is recreated in the R code.
 
 As of 2024, the calculator primarily focuses on traffic offenses. Most fines can be reduced or converted to community service by the court. Most fees cannot.
 
