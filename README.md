@@ -46,8 +46,3 @@ Following a "Welcome and FAQ" screen, the calculator proceeds in four steps.
 ## Deployment note
 
 If you attempt to run a copy of the shinyapp locally or remotely, you will need disable code that enable persistent storage on Dropbox (using ctrl-f and "dropbox persistent storage" should locate the relevant sections). Or you can create your own [Dropbox token](https://github.com/karthik/rdrop2) to keep persistent storage.
-
-## Attribution/Mahalo
-
-Mahalo to Flaticon for making available the image in the hex sticker:  
-<a href="https://www.flaticon.com/free-icons/speeding-ticket" title="speeding ticket icons">Speeding ticket icons created by surang - Flaticon</a>
