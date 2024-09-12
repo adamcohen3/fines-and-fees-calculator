@@ -1,10 +1,12 @@
 # The Hawaii State Judiciary Fines and Fees Calculator
 
-![hex thumbnail](https://raw.githubusercontent.com/adamcohen3/fines-and-fees-calculator/master/misc/hex_thumbnail_202x240.png) 
+## Purpose
 
-[https://adamc3.shinyapps.io/fines-and-fees-calculator/](https://adamc3.shinyapps.io/fines-and-fees-calculator/)    
-<br>
-The fines and fees calculator is part of an [Access to Justice initiative](https://www.courts.state.hi.us/services/access_to_justice_initiative_main_page) at the Hawai'i State Judiciary. The calculator is designed to help people calculate the fines and fees owed on a ticket, and if eligible, request either a reduction in their fines or a conversion to community service. This calculator can be used by defendants, attorneys, the court, and the general public.
+This calculator is part of an [Access to Justice initiative](https://www.courts.state.hi.us/services/access_to_justice_initiative_main_page) at the Hawai'i State Judiciary that seeks to lower barriers to accessing the courts. Most people lack the money, time, and legal expertise to make use of court services. The calculator is designed to help people, especially those experiencing financial hardship, calculate the fines and fees owed on a ticket, and if eligible, request either a reduction in their fines or a conversion to community service. 
+
+In addition to increasing access to justice, the calculator is intended to bring transparency to the traffic code. It shows the monetary penalties for common traffic offenses without needing to look up statutes, analyze their logic, or translate legalese into plain language. This calculator can be used by defendants, attorneys, the court, and the general public. 
+
+The calculator is currently part of a preregistered randomized control trial studying whether people with access to the calculator are more likely than those without access to a) motion the court for a reduction, b) have their motion granted, c) receive larger fine reductions, d) pay their fines, and e) not recidivate in the future.
 
  ## Data
 
@@ -13,11 +15,13 @@ The calculator relies on three sources of data for offenses and their monetary p
 2. **Hawaii Administrative Rules**: Rules established by the Executive branch ([HAR](https://ltgov.hawaii.gov/the-office/administrative-rules/))
 3. **Local Ordinances**: Local laws passed by the City Councils (e.g., [ROH](https://www8.honolulu.gov/ocs/revised-ordinances-of-honolulu/))  
 
-It also relies on two sources for cost of living, which can serve as a reference point in determining a defendant's ability to pay:
+It also relies on two sources for cost of living, which can serve as a reference point in determining a defendant's ability to pay their fines and fees:
 1. [2024 Federal poverty guidelines *for Hawaii*](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
 2. [2020 ALICE survival budget *for Hawaii*](https://www.unitedforalice.org/household-budgets/hawaii)
 
 Most of the static fines and fees that populate the calculator are stored in the rds file at top level of the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, or the court sets the fine between a minimum and maximum penalty determined by statute. These fines require user input, and their underlying logic is recreated in the R code.
+
+Most of the fines and fees that populate the calculator are static and stored in the rds file at top level of the repo. The remaining fines vary depending on a number of parameters determined by statute, including the number of prior offenses and the age of the defendant. In addition, for certain offenses, the court has discretion to set the fine between a minimum and maximum penalty, the range also being determined by statute. For these charges, the initial fines are determined dynamically based on user input and the underlying logic of the statutes. 
 
 As of 2024, the calculator primarily focuses on traffic offenses. Most fines can be reduced or converted to community service by the court. Most fees cannot.
 
