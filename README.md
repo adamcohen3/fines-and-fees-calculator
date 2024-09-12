@@ -19,8 +19,6 @@ It also relies on two sources for cost of living, which can serve as a reference
 1. [2024 Federal poverty guidelines *for Hawaii*](https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines)
 2. [2020 ALICE survival budget *for Hawaii*](https://www.unitedforalice.org/household-budgets/hawaii)
 
-Most of the static fines and fees that populate the calculator are stored in the rds file at top level of the repo. The remaining fines vary depending on the number of prior offenses, age of the defendant, and other factors, or the court sets the fine between a minimum and maximum penalty determined by statute. These fines require user input, and their underlying logic is recreated in the R code.
-
 Most of the fines and fees that populate the calculator are static and stored in the rds file at top level of the repo. The remaining fines vary depending on a number of parameters determined by statute, including the number of prior offenses and the age of the defendant. In addition, for certain offenses, the court has discretion to set the fine between a minimum and maximum penalty, the range also being determined by statute. For these charges, the initial fines are determined dynamically based on user input and the underlying logic of the statutes. 
 
 As of 2024, the calculator primarily focuses on traffic offenses. Most fines can be reduced or converted to community service by the court. Most fees cannot.
